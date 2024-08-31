@@ -1,0 +1,23 @@
+{
+  "spec": "2.0",
+  "mod_id": "ISRUApi",
+  "author": "Verox;NexusHelium;The Space Peacock",
+  "name": "ISRU API",
+  "description": "A Mod API for KSP 2 that adds resources and modules for ISRU parts and features.",
+  "source": "https://github.com/Rendevouz-Entertainment/ISRUApi",
+  "version": "0.0.1",
+  "version_check": "",
+  "ksp2_version": {
+    "min": "0.2.1",
+    "max": "*"
+  },
+  "dependencies": [
+    {
+      "id": "com.github.x606.spacewarp",
+      "version": {
+        "min": "1.9.0",
+        "max": "*"
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 ﻿using KSP.Sim;
 using KSP.Sim.Definitions;
+using Newtonsoft.Json;
 
 namespace ISRUApi.Modules;
 
@@ -10,5 +11,9 @@ public class Data_Mining: ModuleData
 
     [KSPState(CopyToSymmetrySet = true)]
     [PAMDisplayControl(ExcludeFromContext = true)]
-    public ModuleProperty<bool> CurrentDeployState = new ModuleProperty<bool>(false);
+    [LocalizedField("ISRUApi/Modules/Data_Mining/deployed")]
+    public ModuleProperty<bool> deployed = new ModuleProperty<bool>(false);
+
+    [JsonIgnore]
+    public PartComponentModule_Mining PartComponentModule;
 }
